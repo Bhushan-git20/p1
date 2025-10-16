@@ -70,7 +70,8 @@ INSERT INTO jobs (id, company, position, lpa, description, requirements, is_acti
 ('j1211111-1211-1211-1211-121212121212', 'Cisco', 'Software Engineer', 12.0, 'Build networking and security solutions', 'C, C++, Networking, Linux', true),
 ('j1311111-1311-1311-1311-131313131313', 'Intel', 'Software Development Engineer', 14.8, 'Work on chip design and validation tools', 'C++, Python, Hardware, Embedded', true),
 ('j1411111-1411-1411-1411-141414141414', 'IBM', 'Application Developer', 11.5, 'Develop AI and cloud solutions', 'Python, AI, Watson, Cloud', true),
-('j1511111-1511-1511-1511-151515151515', 'Accenture', 'Technology Consultant', 10.5, 'Digital transformation and consulting', 'Full Stack, Agile, Client Management', true);
+('j1511111-1511-1511-1511-151515151515', 'Accenture', 'Technology Consultant', 10.5, 'Digital transformation and consulting', 'Full Stack, Agile, Client Management', true)
+ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Placements (matching some students with jobs)
 INSERT INTO placements (id, student_id, job_id, lpa, status) VALUES
