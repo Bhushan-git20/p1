@@ -18,21 +18,21 @@ ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Student Users (password: student123)
 INSERT INTO users (id, email, name, password, role, is_active) VALUES
-('s1111111-1111-1111-1111-111111111111', 'student1@college.edu', 'Arjun Patel', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s2222222-2222-2222-2222-222222222222', 'student2@college.edu', 'Sneha Reddy', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s3333333-3333-3333-3333-333333333333', 'student3@college.edu', 'Vikram Singh', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s4444444-4444-4444-4444-444444444444', 'student4@college.edu', 'Ananya Gupta', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s5555555-5555-5555-5555-555555555555', 'student5@college.edu', 'Rohan Mehta', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s6666666-6666-6666-6666-666666666666', 'student6@college.edu', 'Kavya Iyer', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s7777777-7777-7777-7777-777777777777', 'student7@college.edu', 'Aditya Verma', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s8888888-8888-8888-8888-888888888888', 'student8@college.edu', 'Neha Joshi', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s9999999-9999-9999-9999-999999999999', 'student9@college.edu', 'Karthik Nair', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s1010101-1010-1010-1010-101010101010', 'student10@college.edu', 'Divya Pillai', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s1111101-1111-1111-1111-111111111011', 'student11@college.edu', 'Rahul Desai', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s1211111-1211-1211-1211-121212121212', 'student12@college.edu', 'Ishita Kapoor', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s1311111-1311-1311-1311-131313131313', 'student13@college.edu', 'Siddharth Menon', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s1411111-1411-1411-1411-141414141414', 'student14@college.edu', 'Pooja Bhat', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s1511111-1511-1511-1511-151515151515', 'student15@college.edu', 'Aman Chatterjee', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true)
+('b1111111-1111-1111-1111-111111111111', 'student1@college.edu', 'Arjun Patel', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b2222222-2222-2222-2222-222222222222', 'student2@college.edu', 'Sneha Reddy', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b3333333-3333-3333-3333-333333333333', 'student3@college.edu', 'Vikram Singh', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b4444444-4444-4444-4444-444444444444', 'student4@college.edu', 'Ananya Gupta', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b5555555-5555-5555-5555-555555555555', 'student5@college.edu', 'Rohan Mehta', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b6666666-6666-6666-6666-666666666666', 'student6@college.edu', 'Kavya Iyer', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b7777777-7777-7777-7777-777777777777', 'student7@college.edu', 'Aditya Verma', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b8888888-8888-8888-8888-888888888888', 'student8@college.edu', 'Neha Joshi', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('b9999999-9999-9999-9999-999999999999', 'student9@college.edu', 'Karthik Nair', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('ba101010-1010-1010-1010-101010101010', 'student10@college.edu', 'Divya Pillai', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('bb111101-1111-1111-1111-111111111011', 'student11@college.edu', 'Rahul Desai', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('bc211111-1211-1211-1211-121212121212', 'student12@college.edu', 'Ishita Kapoor', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('bd311111-1311-1311-1311-131313131313', 'student13@college.edu', 'Siddharth Menon', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('be411111-1411-1411-1411-141414141414', 'student14@college.edu', 'Pooja Bhat', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
+('bf511111-1511-1511-1511-151515151515', 'student15@college.edu', 'Aman Chatterjee', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true)
 ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Student Profiles
