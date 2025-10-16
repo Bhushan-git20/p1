@@ -37,21 +37,21 @@ ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Student Profiles
 INSERT INTO students (id, user_id, department, gpa, skills) VALUES
-('st111111-1111-1111-1111-111111111111', 's1111111-1111-1111-1111-111111111111', 'Computer Science', 8.5, ARRAY['Python', 'Java', 'React', 'SQL']),
-('st222222-2222-2222-2222-222222222222', 's2222222-2222-2222-2222-222222222222', 'Computer Science', 9.2, ARRAY['JavaScript', 'Node.js', 'MongoDB', 'AWS']),
-('st333333-3333-3333-3333-333333333333', 's3333333-3333-3333-3333-333333333333', 'Information Technology', 8.0, ARRAY['C++', 'Docker', 'Kubernetes', 'DevOps']),
-('st444444-4444-4444-4444-444444444444', 's4444444-4444-4444-4444-444444444444', 'Computer Science', 9.5, ARRAY['Python', 'Machine Learning', 'TensorFlow', 'Data Science']),
-('st555555-5555-5555-5555-555555555555', 's5555555-5555-5555-5555-555555555555', 'Electronics', 7.8, ARRAY['Java', 'Spring Boot', 'Microservices', 'REST API']),
-('st666666-6666-6666-6666-666666666666', 's6666666-6666-6666-6666-666666666666', 'Computer Science', 8.9, ARRAY['React', 'TypeScript', 'Next.js', 'UI/UX']),
-('st777777-7777-7777-7777-777777777777', 's7777777-7777-7777-7777-777777777777', 'Information Technology', 8.3, ARRAY['Python', 'Django', 'PostgreSQL', 'Redis']),
-('st888888-8888-8888-8888-888888888888', 's8888888-8888-8888-8888-888888888888', 'Computer Science', 9.0, ARRAY['Android', 'Kotlin', 'Flutter', 'Firebase']),
-('st999999-9999-9999-9999-999999999999', 's9999999-9999-9999-9999-999999999999', 'Computer Science', 8.7, ARRAY['React Native', 'JavaScript', 'GraphQL', 'Apollo']),
-('st101010-1010-1010-1010-101010101010', 's1010101-1010-1010-1010-101010101010', 'Information Technology', 8.4, ARRAY['Java', 'Python', 'Cloud Computing', 'Azure']),
-('st111101-1111-1111-1111-111111111011', 's1111101-1111-1111-1111-111111111011', 'Computer Science', 9.3, ARRAY['Go', 'Rust', 'System Design', 'Distributed Systems']),
-('st121212-1212-1212-1212-121212121212', 's1211111-1211-1211-1211-121212121212', 'Electronics', 8.1, ARRAY['IoT', 'Python', 'Arduino', 'Embedded Systems']),
-('st131313-1313-1313-1313-131313131313', 's1311111-1311-1311-1311-131313131313', 'Computer Science', 8.6, ARRAY['PHP', 'Laravel', 'MySQL', 'Vue.js']),
-('st141414-1414-1414-1414-141414141414', 's1411111-1411-1411-1411-141414141414', 'Information Technology', 8.8, ARRAY['Python', 'Flask', 'NLP', 'AI']),
-('st151515-1515-1515-1515-151515151515', 's1511111-1511-1511-1511-151515151515', 'Computer Science', 9.1, ARRAY['Full Stack', 'MERN', 'TypeScript', 'GraphQL'])
+('c1111111-1111-1111-1111-111111111111', 'b1111111-1111-1111-1111-111111111111', 'Computer Science', 8.5, ARRAY['Python', 'Java', 'React', 'SQL']),
+('c2222222-2222-2222-2222-222222222222', 'b2222222-2222-2222-2222-222222222222', 'Computer Science', 9.2, ARRAY['JavaScript', 'Node.js', 'MongoDB', 'AWS']),
+('c3333333-3333-3333-3333-333333333333', 'b3333333-3333-3333-3333-333333333333', 'Information Technology', 8.0, ARRAY['C++', 'Docker', 'Kubernetes', 'DevOps']),
+('c4444444-4444-4444-4444-444444444444', 'b4444444-4444-4444-4444-444444444444', 'Computer Science', 9.5, ARRAY['Python', 'Machine Learning', 'TensorFlow', 'Data Science']),
+('c5555555-5555-5555-5555-555555555555', 'b5555555-5555-5555-5555-555555555555', 'Electronics', 7.8, ARRAY['Java', 'Spring Boot', 'Microservices', 'REST API']),
+('c6666666-6666-6666-6666-666666666666', 'b6666666-6666-6666-6666-666666666666', 'Computer Science', 8.9, ARRAY['React', 'TypeScript', 'Next.js', 'UI/UX']),
+('c7777777-7777-7777-7777-777777777777', 'b7777777-7777-7777-7777-777777777777', 'Information Technology', 8.3, ARRAY['Python', 'Django', 'PostgreSQL', 'Redis']),
+('c8888888-8888-8888-8888-888888888888', 'b8888888-8888-8888-8888-888888888888', 'Computer Science', 9.0, ARRAY['Android', 'Kotlin', 'Flutter', 'Firebase']),
+('c9999999-9999-9999-9999-999999999999', 'b9999999-9999-9999-9999-999999999999', 'Computer Science', 8.7, ARRAY['React Native', 'JavaScript', 'GraphQL', 'Apollo']),
+('ca101010-1010-1010-1010-101010101010', 'ba101010-1010-1010-1010-101010101010', 'Information Technology', 8.4, ARRAY['Java', 'Python', 'Cloud Computing', 'Azure']),
+('cb111101-1111-1111-1111-111111111011', 'bb111101-1111-1111-1111-111111111011', 'Computer Science', 9.3, ARRAY['Go', 'Rust', 'System Design', 'Distributed Systems']),
+('cc121212-1212-1212-1212-121212121212', 'bc211111-1211-1211-1211-121212121212', 'Electronics', 8.1, ARRAY['IoT', 'Python', 'Arduino', 'Embedded Systems']),
+('cd131313-1313-1313-1313-131313131313', 'bd311111-1311-1311-1311-131313131313', 'Computer Science', 8.6, ARRAY['PHP', 'Laravel', 'MySQL', 'Vue.js']),
+('ce141414-1414-1414-1414-141414141414', 'be411111-1411-1411-1411-141414141414', 'Information Technology', 8.8, ARRAY['Python', 'Flask', 'NLP', 'AI']),
+('cf151515-1515-1515-1515-151515151515', 'bf511111-1511-1511-1511-151515151515', 'Computer Science', 9.1, ARRAY['Full Stack', 'MERN', 'TypeScript', 'GraphQL'])
 ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Jobs
