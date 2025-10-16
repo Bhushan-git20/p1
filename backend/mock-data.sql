@@ -122,13 +122,18 @@ INSERT INTO tests (id, title, category, questions, created_by) VALUES
     {"question": "What is normalization?", "options": ["Removing redundancy", "Adding indexes", "Creating views", "Backup process"], "correct": 0},
     {"question": "Which command is DDL?", "options": ["SELECT", "UPDATE", "CREATE", "DELETE"], "correct": 2}
 ]'::jsonb,
-'f2222222-2222-2222-2222-222222222222');
+'f2222222-2222-2222-2222-222222222222')
+ON CONFLICT (id) DO NOTHING;
 
 -- Success message
 DO $$
 BEGIN
+    RAISE NOTICE '========================================';
     RAISE NOTICE 'Mock data inserted successfully!';
+    RAISE NOTICE '========================================';
     RAISE NOTICE 'Admin credentials: admin@placement.com / admin123';
     RAISE NOTICE 'Faculty credentials: faculty1@placement.com / faculty123';
-    RAISE NOTICE 'Student credentials: student1@college.edu / student123 (and student2-student15)';
+    RAISE NOTICE 'Student credentials: student1@college.edu / student123';
+    RAISE NOTICE '(Also student2 through student15 with same password)';
+    RAISE NOTICE '========================================';
 END $$;
