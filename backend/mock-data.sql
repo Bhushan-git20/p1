@@ -51,7 +51,8 @@ INSERT INTO students (id, user_id, department, gpa, skills) VALUES
 ('st121212-1212-1212-1212-121212121212', 's1211111-1211-1211-1211-121212121212', 'Electronics', 8.1, ARRAY['IoT', 'Python', 'Arduino', 'Embedded Systems']),
 ('st131313-1313-1313-1313-131313131313', 's1311111-1311-1311-1311-131313131313', 'Computer Science', 8.6, ARRAY['PHP', 'Laravel', 'MySQL', 'Vue.js']),
 ('st141414-1414-1414-1414-141414141414', 's1411111-1411-1411-1411-141414141414', 'Information Technology', 8.8, ARRAY['Python', 'Flask', 'NLP', 'AI']),
-('st151515-1515-1515-1515-151515151515', 's1511111-1511-1511-1511-151515151515', 'Computer Science', 9.1, ARRAY['Full Stack', 'MERN', 'TypeScript', 'GraphQL']);
+('st151515-1515-1515-1515-151515151515', 's1511111-1511-1511-1511-151515151515', 'Computer Science', 9.1, ARRAY['Full Stack', 'MERN', 'TypeScript', 'GraphQL'])
+ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Jobs
 INSERT INTO jobs (id, company, position, lpa, description, requirements, is_active) VALUES
