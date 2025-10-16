@@ -1,14 +1,20 @@
 -- Mock Data for Placement Prediction System
 -- Run this AFTER schema.sql
+-- This script can be run multiple times safely (uses ON CONFLICT to handle duplicates)
+
+-- Clear existing mock data (optional - uncomment if you want to reset)
+-- TRUNCATE TABLE placements, tests, students, jobs, users CASCADE;
 
 -- Insert Admin User (password: admin123)
 INSERT INTO users (id, email, name, password, role, is_active) VALUES
-('a1111111-1111-1111-1111-111111111111', 'admin@placement.com', 'Admin User', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'admin', true);
+('a1111111-1111-1111-1111-111111111111', 'admin@placement.com', 'Admin User', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'admin', true)
+ON CONFLICT (id) DO NOTHING;
 
 -- Insert Faculty Users (password: faculty123)
 INSERT INTO users (id, email, name, password, role, is_active) VALUES
 ('f1111111-1111-1111-1111-111111111111', 'faculty1@placement.com', 'Dr. Rajesh Kumar', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'faculty', true),
-('f2222222-2222-2222-2222-222222222222', 'faculty2@placement.com', 'Prof. Priya Sharma', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'faculty', true);
+('f2222222-2222-2222-2222-222222222222', 'faculty2@placement.com', 'Prof. Priya Sharma', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'faculty', true)
+ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Student Users (password: student123)
 INSERT INTO users (id, email, name, password, role, is_active) VALUES
