@@ -32,7 +32,8 @@ INSERT INTO users (id, email, name, password, role, is_active) VALUES
 ('s1211111-1211-1211-1211-121212121212', 'student12@college.edu', 'Ishita Kapoor', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
 ('s1311111-1311-1311-1311-131313131313', 'student13@college.edu', 'Siddharth Menon', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
 ('s1411111-1411-1411-1411-141414141414', 'student14@college.edu', 'Pooja Bhat', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true),
-('s1511111-1511-1511-1511-151515151515', 'student15@college.edu', 'Aman Chatterjee', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true);
+('s1511111-1511-1511-1511-151515151515', 'student15@college.edu', 'Aman Chatterjee', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5NU7w.FHqvS2m', 'student', true)
+ON CONFLICT (id) DO NOTHING;
 
 -- Insert 15 Student Profiles
 INSERT INTO students (id, user_id, department, gpa, skills) VALUES
